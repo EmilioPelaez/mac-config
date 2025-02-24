@@ -1,77 +1,85 @@
 # Mac Setup
 
-## Configuration
- - Dock: Cleanup Unused Items
+## Manual Prep
+ - App Store: Sign in
+ - Install Tower
+ - Install Kaleidoscope App
+
+## Run Automation Script
  - Dock: Enable Magnification
- - Trackpad: Tap to click
- - Desktop: Show HDD
- - Desktop: Icon Size/Spacing
- - Finder: Group and Sort Icons
- - Finder: Show Library Folder
- - Finder: Adjust Sidebar
- - Finder: System Preferences, Accessibility, Display, Show window title icons
- - Spaces: Disable automatic arrangement
+ 
  - Hot Corners: Top Left - Sleep Display
  - Hot Corners: Bottom Left - Disable Screen Saver
  - Hot Corners: Bottom Right - Lock Screen
  - Hot Corners: Top Right - Notification Center
- - Lock Screen: Screen Saver and Display Off Time
+ 
+ - Trackpad: Tap to click
+ 
+ - Desktop: Show HDD
+ - Finder: Group and Sort Icons
+ - Finder: Show Path Bar
+ - Finder: Set default search scope to current folder
+ - Desktop: Icon Size/Spacing
+ - Finder: Show Library Folder
+ - Finder: System Preferences, Accessibility, Display, Show window title icons
+ 
+ - Spaces: Disable automatic arrangement
  - Accessibility - Zoom: Enable scroll gesture zoom
+
+ - Install Homebrew
+ - Install pygments
+ - Install Fira Mono and Fira Code
+
+ - Enable TouchID sudo
+
+ - Install Apps:
+ - 1Password
+ - Textastic
+ - Xcode
+ - DevCleaner for Xcode
+ - Slack
+ - Create Developer Folder
+ - Xcode: Dark Theme
+
+ - Import Settings:
+ - Terminal Settings
+ - Ice Settings
+ - Textastic Settings
+ - Tower Settings
+ - Kaleidoscope Settings
+
+## Configuration
+ - Dock: Cleanup Unused Items
+ - Finder: Adjust Sidebar
+ - Lock Screen: Screen Saver and Display Off Time
  - Bluetooth: Connect AirPods only when last connected
 
 ## Apps
- - App Store: Sign in
- - 1Password
- - Textastic
  - Setapp
  - Setapp: Install Favorites
- - Bartender: Configure
  - Hand Mirror
  - Pure Paste
- - Mosaic: Configuration
- - Logitech Options
- - Mouse Spaces Shortcuts
 
 ## Development
- - Developer Folder
- - Xcode
  - Xcode: Sign In
- - Xcode: Dark Theme
  - Xcode: Indentation
- - Tower
+ - Xcode: Dusk Fira
  - Tower: Git configuration
- - Kaleidoscope App
  - Kaleidoscope: Appearance and Tab Width
- - DevCleaner for Xcode
  - Add SSH key to GitHub
  - SF Symbols
 
 ## Terminal
- - Set theme
- - Enable TouchID sudo
- - Install Homebrew
  - Install python
  - Install CocoaPods
  - Install SwiftLint
  - Install SwiftFormat
  - Install fastlane
- - Install pygments
-```bash
-alias cat='pygmentize -g'
-alias txt='open -a Textastic'
-alias odd='cd ~/Library/Developer/Xcode/;open DerivedData'
-```
 
 ## Font
- - Install Fira Mono and Fira Code
  - Terminal: Fira Mono Regular
- - Xcode: Dusk Fira
- - Textastic: Fira Code Retina
- - Tower: Fira Code Retina
- - Kaleidoscope: Fira Code Retina
 
 ## Work
- - Slack
  - Chrome
  - Google Drive
  - Zoom
