@@ -53,13 +53,6 @@ brew install font-fira-mono
 brew install mas
 source ~/.zshrc
 
-echo "Configuring Terminal"
-# - Set Terminal Theme
-#defaults write com.apple.terminal "Default Window Settings" -string Homebrew
-# - Enable TouchID sudo
-sudo cp /etc/pam.d/sudo_local.template /etc/pam.d/sudo_local
-sudo sed -i '' 's/#auth/auth/g' /etc/pam.d/sudo_local
-
 echo "Installing Apps"
 # - 1Password
 mas install 1333542190
@@ -73,18 +66,33 @@ mas install 803453959
 mas install 1611378436
 # - Ice
 brew install jordanbaird-ice
+# - Better Mouse
+brew install bettermouse
+# - Mac Mouse Fix
+brew install mac-mouse-fix
 
 echo "Importing Settings"
 # - Terminal Settings
-defaults import com.apple.Terminal TerminalSettings.plist
+defaults import com.apple.Terminal Settings/TerminalSettings.plist
 # - Ice Settings
-defaults import com.jordanbaird.Ice IceSettings.plist
+defaults import com.jordanbaird.Ice Settings/IceSettings.plist
 # - Textastic Settings
-defaults import com.textasticapp.textastic-mac TextasticSettings.plist
+defaults import com.textasticapp.textastic-mac Settings/TextasticSettings.plist
 # - Tower Settings
-defaults import com.fournova.Tower3 TowerSettings.plist
+defaults import com.fournova.Tower3 Settings/TowerSettings.plist
 # - Kaleidoscope Settings
-defaults import app.kaleidoscope.v4 KaleidoscopeSettings.plist
+defaults import app.kaleidoscope.v4 Settings/KaleidoscopeSettings.plist
+# - Better Mouse Settings
+defaults import com.naotanhaocan.BetterMouse Settings/BetterMouseSettings.plist
+# - Mac Mouse Fix Settings
+defaults import com.nuebling.mac-mouse-fix Settings/MacMouseFixSettings.plist
+
+echo "Configuring Terminal"
+# - Set Terminal Theme
+defaults write com.apple.terminal "Default Window Settings" -string Homebrew
+# - Enable TouchID sudo
+sudo cp /etc/pam.d/sudo_local.template /etc/pam.d/sudo_local
+sudo sed -i '' 's/#auth/auth/g' /etc/pam.d/sudo_local
 
 echo "Adding aliases"
 echo "alias cat='pygmentize -g'" >> "$HOME/.zshrc"
@@ -97,6 +105,6 @@ echo "Development Configuration"
 mkdir -p ~/Developer
 # - Xcode: Dark Theme
 mkdir -p ~/Library/Developer/Xcode/UserData/FontAndColorThemes
-cp "Dusk Fira.xccolortheme" ~/Library/Developer/Xcode/UserData/FontAndColorThemes/
+cp "Config/Dusk Fira.xccolortheme" ~/Library/Developer/Xcode/UserData/FontAndColorThemes/
 
 echo "Done!"

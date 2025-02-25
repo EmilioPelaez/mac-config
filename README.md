@@ -36,8 +36,6 @@
  - Install pygments
  - Install Fira Mono and Fira Code
 
- - Enable TouchID sudo
-
  - Install Apps:
  - 1Password
  - Textastic
@@ -46,6 +44,8 @@
  - Slack
  - Pure Paste
  - Ice
+ - Better Mouse
+ - Mac Mouse Fix
 
  - Import Settings:
  - Terminal Settings
@@ -53,6 +53,8 @@
  - Textastic Settings
  - Tower Settings
  - Kaleidoscope Settings
+ 
+ - Enable TouchID sudo
 
  - Aliases
  - Create Developer Folder
