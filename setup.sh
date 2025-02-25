@@ -44,30 +44,35 @@ defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool YES
 killall Finder
 
 echo "Installing Homebrew"
-curl -fsSL "https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+echo "export PATH=/opt/homebrew/bin:$PATH" >> "$HOME/.zshrc"
+source ~/.zshrc
 brew install pygments
 brew install font-fira-code
-brew install jordanbaird-ice
+brew install font-fira-mono
 brew install mas
+source ~/.zshrc
 
 echo "Configuring Terminal"
 # - Set Terminal Theme
 #defaults write com.apple.terminal "Default Window Settings" -string Homebrew
 # - Enable TouchID sudo
 sudo cp /etc/pam.d/sudo_local.template /etc/pam.d/sudo_local
-sed -i '' 's/#auth/auth/g' /etc/pam.d/sudo_local
+sudo sed -i '' 's/#auth/auth/g' /etc/pam.d/sudo_local
 
 echo "Installing Apps"
 # - 1Password
 mas install 1333542190
 # - Textastic
 mas install 572491815
-# - Xcode
-mas install 497799835
 # - DevCleaner for Xcode
 mas install 1388020431
 # - Slack
 mas install 803453959
+# - Pure Paste
+mas install 1611378436
+# - Ice
+brew install jordanbaird-ice
 
 echo "Importing Settings"
 # - Terminal Settings

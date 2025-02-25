@@ -2,10 +2,16 @@
 
 ## Manual Prep
  - App Store: Sign in
+
+### Apps
+ - Install Xcode
  - Install Tower
  - Install Kaleidoscope App
+ - Install Setapp
+ - Setapp: Install Favorites
 
 ## Run Automation Script
+
  - Dock: Enable Magnification
  
  - Hot Corners: Top Left - Sleep Display
@@ -38,8 +44,8 @@
  - Xcode
  - DevCleaner for Xcode
  - Slack
- - Create Developer Folder
- - Xcode: Dark Theme
+ - Pure Paste
+ - Ice
 
  - Import Settings:
  - Terminal Settings
@@ -48,17 +54,15 @@
  - Tower Settings
  - Kaleidoscope Settings
 
+ - Aliases
+ - Create Developer Folder
+ - Xcode: Dark Theme
+
 ## Configuration
  - Dock: Cleanup Unused Items
  - Finder: Adjust Sidebar
  - Lock Screen: Screen Saver and Display Off Time
  - Bluetooth: Connect AirPods only when last connected
-
-## Apps
- - Setapp
- - Setapp: Install Favorites
- - Hand Mirror
- - Pure Paste
 
 ## Development
  - Xcode: Sign In
